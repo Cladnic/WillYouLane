@@ -18,7 +18,7 @@ animations = [ {
 [node name="Bird" type="AnimatedSprite"]
 position = Vector2( 446, 263 )
 frames = SubResource( 1 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="BirdPlayer" type="AnimationPlayer" parent="."]
