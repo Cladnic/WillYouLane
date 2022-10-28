@@ -16,20 +16,20 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 61.5, 74.5 )
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 27.5772
+height = 90.5097
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 6 )
 projectile = ExtResource( 7 )
 
 [node name="Player" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -88 )
 frames = SubResource( 1 )
 playing = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
-root_node = NodePath("../..")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, -4.5 )
+position = Vector2( -1.90735e-06, -74 )
+rotation = 0.785398
 shape = SubResource( 2 )
